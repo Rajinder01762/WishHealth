@@ -1,0 +1,50 @@
+// Variable overrides
+
+$blue: #0d9ee8 !default;
+$blue-link: #30abea;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+$red: #e31818 !default;
+// $orange:  #fd7e14 !default;
+// $yellow:  #ffc107 !default;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+// $theme-colors: () !default;
+// $theme-colors: map-merge(
+//   (
+//     "primary": #000,
+//   ),
+//   $theme-colors
+// );
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1300px,
+  xxxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1250px,
+  xxxl: 1350px,
+) !default;
+
+$grey: rgba(#2d2d2d, 0.6) !default;
+
+$xxlDesktop: 1399.98px;
+$xlDesktop: 1299.98px;
+$largeDesktop: 1199.98px;
+$desktop: 991.98px;
+$tablet: 767.98px;
+$phone: 575.98px;
+$small-mobo: 480.98px;

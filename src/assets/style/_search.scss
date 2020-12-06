@@ -1,0 +1,165 @@
+.search-filter-wrapper {
+  background: #fff;
+  padding: 27px 34px;
+  .search-filter {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    label {
+      padding-right: 50px;
+      position: relative;
+      color: rgba(45, 45, 45, 0.9);
+      padding-left: 30px;
+      &:not(:first-child) {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 18px;
+          background: rgba(0, 0, 0, 0.1);
+          left: -25px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      input {
+        visibility: hidden;
+        &:checked {
+          & ~ .checkmark {
+            background: #0d9ee8;
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+      .checkmark {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #0d9ee8;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 5px;
+          top: 1px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .fa-chevron-down {
+      color: rgba(30, 30, 30, 0.7);
+      margin-right: 20px;
+    }
+  }
+  .form-check {
+    padding-left: 0;
+  }
+}
+
+.search-results-wrapper {
+  background: #fff;
+  padding: 36px 0;
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 53px;
+  }
+  .search-results {
+    background: #f3fafe;
+
+    border-radius: 10px;
+    .content {
+      padding: 30px 30px 0;
+    }
+    .doctor-image {
+      width: 180px;
+      height: 180px;
+      @media (max-width: $phone) {
+        width: 140px;
+        height: 140px;
+      }
+    }
+    .doctor-info {
+      @media (min-width: $phone) {
+        padding-left: 40px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 900;
+        color: rgba(45, 45, 45, 0.9);
+      }
+      p {
+        color: rgba(45, 45, 45, 0.6);
+        line-height: normal;
+      }
+      .doctor-name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        .rating {
+          position: relative;
+          padding-left: 20px;
+          &:before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 18px;
+            background: rgb(124, 126, 127);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+          }
+          img {
+            top: -2px;
+            position: relative;
+          }
+          .count {
+            font-size: 12px;
+            margin-left: 5px;
+            .total {
+              color: rgba(45, 45, 45, 0.6);
+            }
+          }
+        }
+      }
+      .informations {
+        p {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .contacts-buttons {
+      display: flex;
+      max-width: 579px;
+      padding: 0 10px 30px;
+      @media (max-width: $phone) {
+        flex-direction: column;
+      }
+      button {
+        padding: 6px 6px;
+        flex-grow: 1;
+        width: auto;
+        @media (max-width: $phone) {
+          border-radius: 30px;
+        }
+        &.call-now {
+          margin: 0 8px;
+          @media (max-width: $phone) {
+            margin: 8px 0;
+          }
+        }
+      }
+    }
+  }
+}

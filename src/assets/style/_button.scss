@@ -1,0 +1,52 @@
+.btn {
+  border-radius: 6px;
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+
+  &-link {
+    $blue-link: #30abea;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none !important;
+  }
+  &-theme {
+    background: rgb(13, 158, 232);
+    border-radius: 30px;
+    width: 186px;
+    height: 60px;
+    color: #fff !important;
+    border-top-left-radius: 0;
+  }
+  &-bordered {
+    background: transparent;
+    border: 1px solid rgb(13, 158, 232);
+    color: rgb(13, 158, 232) !important;
+  }
+  &-themeBordered {
+    background: transparent;
+    border: 1px solid rgb(13, 158, 232);
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    color: rgb(13, 158, 232) !important;
+    border-top-left-radius: 0;
+    font-size: 14px;
+    @media (max-width: $desktop) {
+      font-size: 13px;
+      width: 185px;
+      height: 38px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 12px;
+      width: 170px;
+      height: 34px;
+    }
+  }
+}
+.view-btn {
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: none !important;
+}
